@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="ASLB" Class="ASLBDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=STG-OLAPDB;Failover Partner=STG-OLAPDB;Initial Catalog=SMK_ASLB;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="ASLBConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="" Member="GetSessions">
+    <Type Name="GetSession">
+      <Column Name="DatabaseName" Type="System.String" CanBeNull="false" />
+      <Column Name="UserName" Type="System.String" CanBeNull="false" />
+      <Column Name="IPAddress" Type="System.String" CanBeNull="false" />
+      <Column Name="URL" Type="System.String" CanBeNull="false" />
+      <Column Name="Params" Type="System.String" CanBeNull="false" />
+      <Column Name="Service" Type="System.String" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Function Name="dbo.GetSession" Method="GetSession">
+    <Parameter Name="DatabaseName" Parameter="databaseName" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="UserName" Parameter="userName" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="IPAddress" Parameter="iPAddress" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Params" Parameter="params" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="URL" Parameter="uRL" Type="System.String" DbType="VarChar(200)" Direction="InOut" />
+    <Parameter Name="UseTCPIP" Parameter="useTCPIP" Type="System.Boolean" DbType="Bit" />
+    <ElementType Name="GetSessionResult">
+      <Column Name="ServerName" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+</Database>

@@ -1,0 +1,166 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common Objects", "Common Objects", "{A076E7CD-D422-4F7C-B0FC-C362CBDCD36F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "assemblies", "assemblies", "{83BF398A-02F9-4C6D-95BB-6C551E9C3FC4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SQL Databases", "SQL Databases", "{E4B7132C-B4FB-488B-B3F8-2B95DEE9F256}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "ASLB", "ASLB\ASLB.sqlproj", "{7B3DD839-D464-4F48-9D9C-34EB96F2630F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SQL Objects", "SQL Objects", "{5689DF0D-4C3A-4E70-B545-B21308BE4B4B}"
+	ProjectSection(SolutionItems) = preProject
+		Common Objects\SQL Objects\dbo.sp_errorhandler.sql = Common Objects\SQL Objects\dbo.sp_errorhandler.sql
+		Common Objects\SQL Objects\dbo.sp_GenericMerge.sql = Common Objects\SQL Objects\dbo.sp_GenericMerge.sql
+		Common Objects\SQL Objects\dbo.SQL_FN_GetSystemPropertyValue.sql = Common Objects\SQL Objects\dbo.SQL_FN_GetSystemPropertyValue.sql
+		Common Objects\SQL Objects\dbo.system_global_variables.sql = Common Objects\SQL Objects\dbo.system_global_variables.sql
+		Common Objects\SQL Objects\error.errorlog.sql = Common Objects\SQL Objects\error.errorlog.sql
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IIS Site", "IIS Site", "{C21A7CDD-C187-4258-9A4F-333E475E90B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASLB_WEB", "ASLB_WEB_4.5\ASLB_WEB.csproj", "{2EE4188E-92FC-4E41-AE34-DAF83A5D5780}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7B3DD839-D464-4F48-9D9C-34EB96F2630F} = {7B3DD839-D464-4F48-9D9C-34EB96F2630F}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Windows Program", "Windows Program", "{F862519D-6771-4FB4-8058-EAAABAC22A11}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASLB_Monitor_Console", "ASLB_Monitor_Console\ASLB_Monitor_Console.csproj", "{4D2ECCF1-28DA-4414-A088-18E9A0CFD326}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASLB_Core", "ASLB_Core\ASLB_Core.csproj", "{D044CFB2-EFB4-43FE-8E98-E9A9604C2DB9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASLB_Monitor_Service", "ASLB_Monitor_Service\ASLB_Monitor_Service.csproj", "{2CC66EFF-46EE-4715-8F4F-3C47A2152693}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common Code", "Common Code", "{1BE82AF1-E1B2-4F13-845A-EE14BD144293}"
+	ProjectSection(SolutionItems) = preProject
+		Application_Info.cs = Application_Info.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Console", "Console", "{6E87BE11-C66A-4B57-8869-7D008FE29518}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service", "Service", "{1FD9FB57-B9D6-4157-BF46-D1475B385D00}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{EF133EA0-104D-4216-8F50-9ED11E9A2451}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASLB_DAL", "ASLB_DAL\ASLB_DAL.csproj", "{02A5DFD6-5A35-4262-88BF-5F27E6BAC59C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASLB_LOG", "ASLB_LOG\ASLB_LOG.csproj", "{3BFBBC4A-9832-4A92-A057-1032AB82C0CB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Resource", "Resource", "{0EE579E4-C837-4497-802C-75D0555D5A39}"
+	ProjectSection(SolutionItems) = preProject
+		Common Objects\Resource\LB.ico = Common Objects\Resource\LB.ico
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "setup", "setup", "{43A8389F-5045-4AD8-A545-C9895505B143}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "app", "app", "{BA831174-AA74-43C9-81D3-553498A44576}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "service", "service", "{EEC2C575-A46D-4A0F-B109-C02335566F94}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "ASLB_Monitor", "ASLB_Monitor\ASLB_Monitor.vdproj", "{F457A582-3A98-4CDB-9AB4-374FBCFCC016}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7B3DD839-D464-4F48-9D9C-34EB96F2630F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B3DD839-D464-4F48-9D9C-34EB96F2630F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B3DD839-D464-4F48-9D9C-34EB96F2630F}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{7B3DD839-D464-4F48-9D9C-34EB96F2630F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B3DD839-D464-4F48-9D9C-34EB96F2630F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B3DD839-D464-4F48-9D9C-34EB96F2630F}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{2EE4188E-92FC-4E41-AE34-DAF83A5D5780}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EE4188E-92FC-4E41-AE34-DAF83A5D5780}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EE4188E-92FC-4E41-AE34-DAF83A5D5780}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EE4188E-92FC-4E41-AE34-DAF83A5D5780}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D2ECCF1-28DA-4414-A088-18E9A0CFD326}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D2ECCF1-28DA-4414-A088-18E9A0CFD326}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D2ECCF1-28DA-4414-A088-18E9A0CFD326}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D2ECCF1-28DA-4414-A088-18E9A0CFD326}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D044CFB2-EFB4-43FE-8E98-E9A9604C2DB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D044CFB2-EFB4-43FE-8E98-E9A9604C2DB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D044CFB2-EFB4-43FE-8E98-E9A9604C2DB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D044CFB2-EFB4-43FE-8E98-E9A9604C2DB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CC66EFF-46EE-4715-8F4F-3C47A2152693}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CC66EFF-46EE-4715-8F4F-3C47A2152693}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CC66EFF-46EE-4715-8F4F-3C47A2152693}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CC66EFF-46EE-4715-8F4F-3C47A2152693}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02A5DFD6-5A35-4262-88BF-5F27E6BAC59C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02A5DFD6-5A35-4262-88BF-5F27E6BAC59C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02A5DFD6-5A35-4262-88BF-5F27E6BAC59C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02A5DFD6-5A35-4262-88BF-5F27E6BAC59C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BFBBC4A-9832-4A92-A057-1032AB82C0CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BFBBC4A-9832-4A92-A057-1032AB82C0CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BFBBC4A-9832-4A92-A057-1032AB82C0CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BFBBC4A-9832-4A92-A057-1032AB82C0CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F457A582-3A98-4CDB-9AB4-374FBCFCC016}.Debug|Any CPU.ActiveCfg = Debug
+		{F457A582-3A98-4CDB-9AB4-374FBCFCC016}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{83BF398A-02F9-4C6D-95BB-6C551E9C3FC4} = {A076E7CD-D422-4F7C-B0FC-C362CBDCD36F}
+		{7B3DD839-D464-4F48-9D9C-34EB96F2630F} = {E4B7132C-B4FB-488B-B3F8-2B95DEE9F256}
+		{5689DF0D-4C3A-4E70-B545-B21308BE4B4B} = {A076E7CD-D422-4F7C-B0FC-C362CBDCD36F}
+		{2EE4188E-92FC-4E41-AE34-DAF83A5D5780} = {C21A7CDD-C187-4258-9A4F-333E475E90B5}
+		{4D2ECCF1-28DA-4414-A088-18E9A0CFD326} = {6E87BE11-C66A-4B57-8869-7D008FE29518}
+		{D044CFB2-EFB4-43FE-8E98-E9A9604C2DB9} = {EF133EA0-104D-4216-8F50-9ED11E9A2451}
+		{2CC66EFF-46EE-4715-8F4F-3C47A2152693} = {1FD9FB57-B9D6-4157-BF46-D1475B385D00}
+		{1BE82AF1-E1B2-4F13-845A-EE14BD144293} = {A076E7CD-D422-4F7C-B0FC-C362CBDCD36F}
+		{6E87BE11-C66A-4B57-8869-7D008FE29518} = {F862519D-6771-4FB4-8058-EAAABAC22A11}
+		{1FD9FB57-B9D6-4157-BF46-D1475B385D00} = {F862519D-6771-4FB4-8058-EAAABAC22A11}
+		{EF133EA0-104D-4216-8F50-9ED11E9A2451} = {F862519D-6771-4FB4-8058-EAAABAC22A11}
+		{02A5DFD6-5A35-4262-88BF-5F27E6BAC59C} = {EF133EA0-104D-4216-8F50-9ED11E9A2451}
+		{3BFBBC4A-9832-4A92-A057-1032AB82C0CB} = {EF133EA0-104D-4216-8F50-9ED11E9A2451}
+		{0EE579E4-C837-4497-802C-75D0555D5A39} = {A076E7CD-D422-4F7C-B0FC-C362CBDCD36F}
+		{43A8389F-5045-4AD8-A545-C9895505B143} = {F862519D-6771-4FB4-8058-EAAABAC22A11}
+		{BA831174-AA74-43C9-81D3-553498A44576} = {43A8389F-5045-4AD8-A545-C9895505B143}
+		{EEC2C575-A46D-4A0F-B109-C02335566F94} = {43A8389F-5045-4AD8-A545-C9895505B143}
+		{F457A582-3A98-4CDB-9AB4-374FBCFCC016} = {EEC2C575-A46D-4A0F-B109-C02335566F94}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 9
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://iltfsapp01.eyeblaster.com:8080/tfs/mediamind
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ASLB\\ASLB.sqlproj
+		SccProjectTopLevelParentUniqueName1 = ASLB.sln
+		SccProjectName1 = ASLB
+		SccLocalPath1 = ASLB
+		SccProjectUniqueName2 = ASLB_WEB_4.5\\ASLB_WEB.csproj
+		SccProjectTopLevelParentUniqueName2 = ASLB.sln
+		SccProjectName2 = ASLB_WEB_4.5
+		SccLocalPath2 = ASLB_WEB_4.5
+		SccProjectUniqueName3 = ASLB_Monitor_Console\\ASLB_Monitor_Console.csproj
+		SccProjectTopLevelParentUniqueName3 = ASLB.sln
+		SccProjectName3 = ASLB_Monitor_Console
+		SccLocalPath3 = ASLB_Monitor_Console
+		SccProjectUniqueName4 = ASLB_Core\\ASLB_Core.csproj
+		SccProjectTopLevelParentUniqueName4 = ASLB.sln
+		SccProjectName4 = ASLB_Core
+		SccLocalPath4 = ASLB_Core
+		SccProjectUniqueName5 = ASLB_Monitor_Service\\ASLB_Monitor_Service.csproj
+		SccProjectTopLevelParentUniqueName5 = ASLB.sln
+		SccProjectName5 = ASLB_Monitor_Service
+		SccLocalPath5 = ASLB_Monitor_Service
+		SccProjectUniqueName6 = ASLB_DAL\\ASLB_DAL.csproj
+		SccProjectTopLevelParentUniqueName6 = ASLB.sln
+		SccProjectName6 = ASLB_DAL
+		SccLocalPath6 = ASLB_DAL
+		SccProjectUniqueName7 = ASLB_LOG\\ASLB_LOG.csproj
+		SccProjectTopLevelParentUniqueName7 = ASLB.sln
+		SccProjectName7 = ASLB_LOG
+		SccLocalPath7 = ASLB_LOG
+		SccProjectUniqueName8 = ASLB_Monitor\\ASLB_Monitor.vdproj
+		SccProjectTopLevelParentUniqueName8 = ASLB.sln
+		SccProjectName8 = ASLB_Monitor
+		SccLocalPath8 = ASLB_Monitor
+	EndGlobalSection
+EndGlobal

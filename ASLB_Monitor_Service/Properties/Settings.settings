@@ -1,0 +1,21 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ASLB_Monitor_Service.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="CheckInterval" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">10000</Value>
+    </Setting>
+    <Setting Name="SQLServerConnectionString" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Data Source=STG-OLAPDB;Failover Partner=STG-OLAPDB;Initial Catalog=SMK_ASLB;Integrated Security=True</Value>
+    </Setting>
+    <Setting Name="CheckTimeout" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">60000</Value>
+    </Setting>
+    <Setting Name="ServerDatabaseList" Type="System.String" Scope="User">
+      <Value Profile="(Default)">STG-VA01.eyeblaster.com;Analytics4|STG-VA02.eyeblaster.com;Analytics4</Value>
+    </Setting>
+    <Setting Name="PerformanceCounters" Type="System.String" Scope="User">
+      <Value Profile="(Default)">MSSQL$OLAPDB:Databases;Log File(s) Used Size (KB);ODS|MSSQL$OLAPDB:Access Methods;Page Splits/Sec|MSSQL$OLAPDB:General Statistics;User Connections|ASLB:Service;Server;Active|Processor;% Processor Time;_Total|Memory;Available KBytes;|MSAS11:Connection;Current connections|MSAS11:Connection;Failures/sec|MSAS11:Connection;Requests/sec|MSAS11:Connection;Successes/sec|MSAS11:Connection;Current user sessions|MSAS11:Memory;Memory Usage KB|MSAS11:Memory;Memory Limit Low KB|MSAS11:Memory;Memory Limit High KB|MSAS11:Memory;Memory Limit Hard KB</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

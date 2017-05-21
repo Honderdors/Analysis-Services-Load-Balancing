@@ -1,0 +1,27 @@
+﻿CREATE TABLE [app].[sessions]
+    (
+      [connection_id] UNIQUEIDENTIFIER NOT NULL ,
+      [service_id] INT NOT NULL ,
+      [server_id] INT NOT NULL ,
+      [datebase_id] INT NOT NULL ,
+      [UserName] NVARCHAR(100) NOT NULL ,
+      [IPAddress] NVARCHAR(100) NOT NULL ,
+      [Params] NVARCHAR(100) NOT NULL ,
+      [url] NVARCHAR(1000) NOT NULL ,
+      [net_transport] NVARCHAR(40) ,
+      [protocol_type] NVARCHAR(40) ,
+      [encrypt_option] NVARCHAR(40) ,
+      [auth_scheme] NVARCHAR(40) ,
+      [client_net_address] NVARCHAR(48) ,
+      [client_tcp_port] INT ,
+      [hostname] NVARCHAR(128) ,
+      [program_name] NVARCHAR(128) ,
+      [nt_domain] NVARCHAR(128) ,
+      [nt_username] NVARCHAR(128) ,
+      [net_address] NVARCHAR(128) ,
+      [loginame] NVARCHAR(128) ,
+      [endpoint_id] INT ,
+      [create_time] DATETIME2(7) DEFAULT ( GETUTCDATE() ) ,
+      [last_request_time] DATETIME2(7) DEFAULT ( GETUTCDATE() ) ,
+      [request_counter] BIGINT DEFAULT ( 1 )
+    );

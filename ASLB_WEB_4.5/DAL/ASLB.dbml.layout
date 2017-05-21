@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="ASLB">
+  <DataContextMoniker Name="/ASLBDataContext" />
+  <nestedChildShapes>
+    <classShape Id="24ad1a4d-eaba-4868-bd57-9aa8396a03fc" absoluteBounds="0.625, 0.5, 3.75, 1.9631982421875">
+      <DataClassMoniker Name="/ASLBDataContext/GetSession" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8adb5716-ff3e-44e2-820d-edf53daee5aa" absoluteBounds="0.64000000000000012, 0.96, 3.7199999999999998, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
